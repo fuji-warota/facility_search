@@ -9,7 +9,7 @@ $api = 'https://map.yahooapis.jp/search/local/V1/localSearch';
 require('token.php');
 $params = array(
     'lat' => '35',
-    'lon' => '135',
+    'lon' => '136',
     'dist' => '3',
     'gc' => '01'
 );
@@ -22,5 +22,6 @@ curl_setopt_array($ch, array(
  
 $result = curl_exec($ch);
 curl_close($ch);
+print_r($result);
 return $result
 ?>
