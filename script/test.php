@@ -22,6 +22,5 @@ curl_setopt_array($ch, array(
  
 $result = curl_exec($ch);
 curl_close($ch);
-print_r($result);
 return $result
 ?>

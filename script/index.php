@@ -8,7 +8,7 @@
     <p>test</p>
     <script type="text/javascript" src="./position.js"></script>
     <?php include('./test.php');
-    echo $result;
+    echo json_encode($result, JSON_UNESCAPED_UNICODE);
     ?>
   </body>
 </html>
