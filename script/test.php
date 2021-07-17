@@ -8,10 +8,10 @@ $api = 'https://map.yahooapis.jp/search/local/V1/localSearch';
 //$appid = '<アプリケーションID>';
 require('token.php');
 $params = array(
-    'lat' => '35',
-    'lon' => '136',
-    'dist' => '3',
-    'gc' => '01'
+  'gc' => '01',
+  'lat' => $_POST['lat'],
+  'lon' => $_POST['lon'],
+  'dist' => '3'
 );
  
 $ch = curl_init($api.'?'.http_build_query($params));
